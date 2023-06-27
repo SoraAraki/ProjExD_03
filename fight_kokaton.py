@@ -8,7 +8,7 @@ import pygame as pg
 WIDTH = 1600  # ゲームウィンドウの幅
 HEIGHT = 900  # ゲームウィンドウの高さ
 NUM_OF_BOMBS = 5  # 爆弾の数
-BLACK = (0,0,0)
+BLACK = (255,0,0 ) #issue1
 
 def check_bound(area: pg.Rect, obj: pg.Rect) -> tuple[bool, bool]:
     """
@@ -199,8 +199,6 @@ def main():
                     beam = None
                     del bombs[i]
                     bird.change_img(6, screen)
-             
-             
                     break
 
         pg.display.update()
